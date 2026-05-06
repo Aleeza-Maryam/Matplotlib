@@ -81,7 +81,7 @@ p3=np.arange(len(x3))
 p4=[j+height_val for j in p3]
 # labels 
 plt.ylabel("languages2",fontsize=15)
-plt.xlabel("No",fontsize=15)
+plt.xlabel("popularity",fontsize=15)
 
 
 plt.barh(p3,y3,height_val,color="red",edgecolor="black",linestyle="-",label="Comparison")
@@ -90,4 +90,5 @@ plt.yticks(p3 + height_val/2, x3,rotation=20)
 plt.legend(loc="best")
 plt.title("Grouped bar chart")
 plt.show()
+
 
