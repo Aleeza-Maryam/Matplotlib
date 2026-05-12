@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 x=[4,3,5,2,6]
-y=[5,3,2,4,1]
+y=[5,7,3,4,2]
 plt.stem(x,y,linefmt="r:",markerfmt="k*",bottom=2,basefmt="g",label="python")
 plt.title("Stem plot")
 plt.legend()
