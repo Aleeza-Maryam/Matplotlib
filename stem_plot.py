@@ -15,3 +15,20 @@ plt.show()
 # Matplotlib ko ab 100 alag objects nahi, sirf 1 "group" handle karna padta hai.
 
 # Fayda: Ye bahut fast hai aur memory kam leta hai.
+
+
+import numpy as np
+
+# Data
+x1 = np.arange(0, 21)
+y1 = np.random.randint(1, 20, 21)
+
+# Customizing the plot
+# linefmt: line style, markerfmt: marker shape, basefmt: base line color
+plt.stem(x1, y1, linefmt='grey', markerfmt='D', basefmt='black')
+
+# Additional styling
+plt.title("Customized Stem Plot (Diamonds)")
+plt.grid(True, linestyle='--', alpha=0.6)
+
+plt.show()
